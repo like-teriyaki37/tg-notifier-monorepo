@@ -1,0 +1,19 @@
+# Global ignores for Docker build context
+**/node_modules
+**/dist
+.git
+.gitignore
+.DS_Store
+npm-debug.log*
+yarn-error.log*
+.env
+.env.*
+!*.example
+
+# IDE
+.vscode
+.idea
+
+# Docker
+**/Dockerfile*
+**/docker-compose*

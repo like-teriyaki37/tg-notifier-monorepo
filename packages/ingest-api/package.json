@@ -1,0 +1,17 @@
+{
+  "name": "@notifier/ingest-api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@notifier/common": "^0.1.0",
+    "bullmq": "^5.8.3",
+    "fastify": "^4.27.2",
+    "fastify-raw-body": "^4.3.0"
+  }
+}

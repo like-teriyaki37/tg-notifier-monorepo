@@ -1,0 +1,31 @@
+{
+  "name": "notifier-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for notifier system",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "docker compose up -d",
+    "down": "docker compose down",
+    "build": "npm --workspaces run build",
+    "clean": "npm --workspaces run clean",
+    "migrate": "ts-node scripts/migrate.ts",
+    "lint": "echo \"(optional) add eslint later\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.12.7",
+    "@types/pg": "^8.10.2",
+    "@types/nodemailer": "^6.4.15"
+  }
+}
