@@ -2,8 +2,6 @@
 
 This monorepo contains the non-serverless implementation of the notifier system.
 
-For production deployment steps (TLS, SMTP, hardening), see `DEPLOYMENT.md`.
-
 ## Structure
 
 ```
