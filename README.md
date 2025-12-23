@@ -37,7 +37,7 @@ packages/
 cp .env.example .env
 # Edit .env with your Telegram token, SMTP, and domain
 
-# 2. Start services
+# 2. Start Docker stack (PostgreSQL, Redis, all services)
 npm run dev
 
 # 3. Run database migrations
